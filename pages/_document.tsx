@@ -17,7 +17,7 @@ export default function Document() {
                 <meta charSet="utf-8"/>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
                 {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
-                <title>Muhammad Fiaz</title>
+                <title>Days</title>
                 <meta name="description"
                       content="Muhammad Fiaz - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AL/ML, and Design. Join my journey."/>
 
@@ -64,20 +64,7 @@ export default function Document() {
                 <link rel="manifest" href="/manifest.json"/>
 
 
-                <meta property="og:title" content="Muhammad Fiaz" key="title"/>
-                <meta property="og:description"
-                      content="Muhammad Fiaz - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
-                <meta property="og:image" content="https://avatars.githubusercontent.com/u/75434191?v=4"/>
-                <meta property="og:image:secure_url" content="https://avatars.githubusercontent.com/u/75434191?v=4"/>
-                <meta property="og:image:type" content="image/jpeg"/>
-                <meta property="og:image:alt" content="Muhammad Fiaz"/>
-                <meta property="og:image:width" content="300"/>
-                <meta property="og:image:height" content="300"/>
-                <meta property="og:url" content="https://muhammadfiaz.com"/>
-                <meta property="og:type" content="website"/>
-                <meta property="og:profile" content="https://github.com/muhammad-fiaz"/>
-                <meta property="og:site_name" content="Muhammad Fiaz"/>
-                <meta property="og:locale" content="en_US"/>
+
 
 
                 <meta name="twitter:card" content="summary"/>
