@@ -72,7 +72,6 @@ export default function Document() {
                 <meta name="twitter:title" content="Muhammad Fiaz"/>
                 <meta name="twitter:description"
                       content="Muhammad Fiaz - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
-                <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/75434191?v=4"/>
                 <meta name="twitter:creator" content="https://twitter.com/muhammadfiaz_"/>
                 <meta name="twitter:domain" content="https://muhammadfiaz.com"/>
 
