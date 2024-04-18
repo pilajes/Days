@@ -67,14 +67,8 @@ export default function Document() {
 
 
 
-                <meta name="twitter:card" content="summary"/>
-                <meta name="twitter:site" content="https://twitter.com/muhammadfiaz_"/>
-                <meta name="twitter:title" content="Muhammad Fiaz"/>
-                <meta name="twitter:description"
-                      content="Muhammad Fiaz - A dedicated Full Stack Developer proficient in App/Web, Cloud, DevOps, AI/ML, and Design. Join my journey."/>
-                <meta name="twitter:creator" content="https://twitter.com/muhammadfiaz_"/>
-                <meta name="twitter:domain" content="https://muhammadfiaz.com"/>
-
+                <meta name="twitter:title" content="Days"/>
+                <meta name="twitter:image" content="/public/img/daysLogo.jpg"/>
 
                 <link rel='apple-touch-startup-image' href='/img/logo_rounded.png' sizes='2048x2732'/>
                 <link rel='apple-touch-startup-image' href='/img/logo_rounded.png' sizes='1668x2224'/>
