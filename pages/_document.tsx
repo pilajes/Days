@@ -68,7 +68,7 @@ export default function Document() {
 
 
                 <meta name="twitter:title" content="Days"/>
-                <meta name="twitter:image" content="/public/img/daysLogo.jpg"/>
+                <meta name="twitter:image" content="/img/daysLogo.jpg"/>
 
                 <link rel='apple-touch-startup-image' href='/img/logo_rounded.png' sizes='2048x2732'/>
                 <link rel='apple-touch-startup-image' href='/img/logo_rounded.png' sizes='1668x2224'/>
