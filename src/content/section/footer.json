@@ -45,20 +45,8 @@
 
 	"social": [
 		{
-			"url": "https://medium.com/@muhammad-fiaz",
-			"icon": "medium"
-		},
-		{
-			"url": "https://dev.to/muhammadfiaz",
-			"icon": "dev"
-		},
-		{
-			"url": "https://www.linkedin.com/in/muhammad-fiaz-/",
+			"url": "https://www.linkedin.com/in/gregory-solomon-pickett-307560130/",
 			"icon": "linkedin"
-		},
-		{
-			"url": "https://github.com/muhammad-fiaz",
-			"icon": "github"
 		}
 	]
 }

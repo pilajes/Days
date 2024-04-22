@@ -230,7 +230,7 @@ export default function Navbar() {
 						<li>
 							<ThemeMode />
 						</li>
-						<li>{signInContent}</li>
+						{/* <li>{signInContent}</li> */}
 					</ul>
 				</li>
 			</ul>

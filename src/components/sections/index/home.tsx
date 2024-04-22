@@ -13,64 +13,116 @@ import CopyBlock from '../../blocks/about.copy'
 
 import about from '../../../styles/scss/sections/index/about.module.scss';
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFileAlt, faUsers, faLightbulb, faVideo, faComments } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faTiktok} from '@fortawesome/free-brands-svg-icons';
+
+
 
 export default function Home() {
 	return (
 		<Section classProp={about.section}>
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="About Me"
-					preTitle="Synopsis"
-					subTitle="From an early age, my passion for creating new things has been a driving force. Immersed in the world of design and coding, I honed my skills and explored innovative solutions. This love for creation has shaped my career, fueling my desire to bring impactful and visually stunning projects to life. With meticulous attention to detail and a keen eye for aesthetics, I strive to craft exceptional and memorable experiences."
+					title="How does Days work?"
+					preTitle=""
+					subTitle="Here at Day's we help you collaborate with the best creators in the world to create high quality content"
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-					<img src="/public/img/daysLogo.jpg" width={600} height={800} alt="Days" loading="eager" />
+					<div className={about.copy}>
+						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+							<h3>1. Choose from our selection of templates</h3>
+							<div className={`${about.icon2} flex-center`}>
+								<FontAwesomeIcon icon={['fas','file-alt']} className="fa-4x"/>                                
+							</div>
+							<div style={{ fontSize: '2rem' }}>↓</div>
+						</div>
+						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+							<h3>2. Assemble your Team of experts</h3>
+							<div className={about.icon2}>
+								<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+									<FontAwesomeIcon icon={faUsers} className="fa-4x" />
+								</div>
+							</div>
+							<div style={{ fontSize: '2rem' }}>↓</div>
+						</div>
+						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+							<h3>3. Cultivate a unified vision with the Team</h3>
+							<div className={about.icon2}>
+								<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+									<FontAwesomeIcon icon={['fas', 'lightbulb']} className="fa-4x" />
+								</div>
+							</div>
+							<div style={{ fontSize: '2rem' }}>↓</div>
+						</div>
+						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+							<h3>4. The Team Records & Edits Content</h3>
+							<div className={about.icon2}>
+
+								<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+									<FontAwesomeIcon icon={['fas', 'video']} className="fa-4x" />
+								</div>
+							</div>
+							<div style={{ fontSize: '2rem' }}>↓</div>
+						</div>
+						<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+							<h3>5. Content Delivered to you</h3>
+							<div className={about.icon2}>
+								<div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+									<FontAwesomeIcon icon={['fas', 'envelope']} className="fa-4x" />
+								</div>
+							</div>
+						</div>
+					</div>
+
 					</div>
 					<div className={about.copy}>
 						<CopyBlock
-							title="Softskills"
+							title="Choose a Template"
 							containerClass={about.container}
 							iconClass={about.icon}
-							icon={[ 'fas', 'user' ]}
-							copy="With a solid background in design and technical expertise, I am a skilled developer who excels in delivering high-quality solutions. Alongside my proficiency in coding, I possess strong leadership, time management, and multitasking skills, which I have honed through managing complex development projects. As a dedicated individual, I constantly seek opportunities to expand my knowledge and stay updated with the latest industry trends. With a passion for creating innovative and efficient applications, I am committed to bringing value and success to every development endeavor."
+							icon={[ 'fas', 'file-alt' ]}
+							copy="Choose from a diverse range of project templates, Cinematography/Video Editing (for Reels, TikToks, YouTube), Song production, Podcast creation, Photography, Animation, and Comics. Whether you're planning a special occasion like a wedding or baby shower, we also offer templates tailored to those unique events!"
 						/>
 						<CopyBlock
-							title="Development and Projects"
+							title="Assemble a Team"
 							containerClass={about.container}
 							iconClass={about.icon}
-							icon={['fas', 'code']}
-							copy="Development and project execution are my passion. I thrive on the challenges of bringing ideas to life through coding and turning concepts into functional, robust solutions. With meticulous planning, efficient workflows, and a keen eye for detail, I ensure successful project delivery, meeting objectives and exceeding expectations."
+							icon={['fas', 'users']}
+							copy="Explore our vibrant community of skilled cinematographers, editors, animators, and other creative professionals, and handpick the perfect team to bring your vision to life."
+						/>
+												<CopyBlock
+							title="Cultivate a unified Vision"
+							containerClass={about.container}
+							iconClass={about.icon}
+							icon={['fas', 'lightbulb']}
+							copy="Once your team is in place, they'll reach out to you directly to start the conversation. This initial contact is crucial for understanding your vision and requirements. Through these discussions, they'll ensure they're aligned with your goals and have a clear understanding of what needs to be done to bring your vision to life. This personalized approach sets the stage for a collaborative and efficient process, where every detail is carefully considered to meet your needs and exceed your expectations."
 						/>
 					</div>
 				</section>
 				<section className={about.content}>
 					<div className={about.copy}>
+
 						<CopyBlock
-							title="Security and Privacy"
+							title="Sit back while the Team works"
 							containerClass={about.container}
 							iconClass={about.icon}
-							icon={['fas', 'shield-alt']}
-							copy="Security and privacy are paramount in my approach to development. I prioritize the protection of sensitive data and implement robust security measures. By adhering to industry best practices and staying updated on emerging threats, I ensure that users' information is safeguarded. Trust and confidentiality are the cornerstones of my work, fostering secure and private experiences for all."
-						/>
-						<CopyBlock
-							title="Constant Learning and Improvements"
-							containerClass={about.container}
-							iconClass={about.icon}
-							icon={['fas', 'book']}
-							copy="I have an insatiable thirst for knowledge and a passion for continuous learning and development. Keeping up with the latest industry trends and emerging technologies allows me to stay ahead of the curve. By actively seeking new challenges and expanding my skill set, I constantly push the boundaries of my abilities, ensuring that I deliver cutting-edge solutions and provide valuable insights to clients."
+							icon={['fas', 'video']}
+							copy="Sit back, relax, and entrust your project to our capable team. Whether it's immortalizing the magic of your wedding day in a cinematic masterpiece or crafting a captivating advertisement to elevate your small business, Days is your one-stop destination for all your creative needs. With our experienced professionals at the helm, you can rest assured that every aspect of your project will be handled with meticulous care and attention to detail. From concept creation to final delivery, we're here to exceed your expectations and bring your vision to life in the most extraordinary way possible."
 						/>
 
 
 
 						<BadgesBlock
-							title="Research and planning"
+							title="Receive & Distrubute Content"
 							containerClass={about.container}
-							list={methods}
+							list={socialMediaIcons}
 							fullContainer="fullContainer"
 							block="methods"
-							icon="fingerprint"
-							copy="One of the most exhilarating aspects of my creative process is conducting in-depth research and meticulous planning for development projects. From Design Systems to Brand Strategy, I relish the opportunity to explore various touchpoints of user experience. Constantly seeking to expand my knowledge and skills, I immerse myself in research to stay ahead of industry trends. By strategically planning and executing projects, I aim to create exceptional digital experiences that exceed expectations and deliver measurable results."
+							icon="envelope"
+							copy="
+							Once the creative journey reaches its culmination, our dedicated team will seamlessly deliver the final content to your doorstep. Whether you're eagerly awaiting to share it with the world or simply savoring the moment to enjoy it yourself, our mission is to ensure that the delivery process is smooth and hassle-free. With meticulous attention to detail and a commitment to excellence, we take pride in presenting you with content that not only meets but exceeds your expectations. So, whether you're preparing to distribute it across various platforms or relish it in the comfort of your own space, you can trust us to handle every step of the process with utmost care and professionalism."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`} invertedColor={undefined}						/>
 					</div>
@@ -80,9 +132,17 @@ export default function Home() {
 	)
 }
 const methods = [
-	{ key: 'machinelearning', name: 'Machine Learning', type: 'fad', icon: 'devicon' },
-	{ key: 'artificialintelligence', name: 'Artificial Intelligence', type: 'fad', icon: 'devicon' },
-	{ key: 'deeplearning', name: 'Deep Learning', type: 'fad', icon: 'devicon' },
-	{ key: 'neuralnetworks', name: 'Neural Networks', type: 'fad', icon: 'devicon' },
-
+    { key: 'facebook', name: 'Facebook', icon: faFacebook },
+    { key: 'twitter', name: 'Twitter', type: 'fab', icon: 'twitter' },
+    { key: 'linkedin', name: 'LinkedIn', type: 'fab', icon: 'linkedin' },
+    { key: 'instagram', name: 'Instagram', type: 'fab', icon: 'instagram' },
 ];
+const socialMediaIcons = [
+    { key: 'facebook', name: 'Facebook', type: 'fab', icon: faFacebook },
+    { key: 'twitter', name: 'Twitter', type: 'fab', icon: faTwitter },
+    { key: 'tiktok', name: 'Tiktok', type: 'fab', icon: faTiktok },
+    { key: 'instagram', name: 'Instagram', type: 'fab', icon: faInstagram },
+];
+
+
+

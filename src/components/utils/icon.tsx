@@ -8,7 +8,6 @@ import {fal} from '@fortawesome/pro-light-svg-icons';
 import {fad} from '@fortawesome/pro-duotone-svg-icons';
 import {far} from '@fortawesome/pro-regular-svg-icons';
 import {fab} from '@fortawesome/free-brands-svg-icons';
-
 // Icons
 library.add(fat, fal, fas, fad, far, fab);
 

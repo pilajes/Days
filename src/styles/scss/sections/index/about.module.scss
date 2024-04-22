@@ -71,6 +71,28 @@
 
 		}
 		
+		.icon2 {
+			font-size: 1rem;
+			padding: 0.5rem;
+			display: flex;
+			align-items: center;
+			background: var(--primary-dark);
+			width: fit-content;
+			border-radius: 0.5rem;
+			// aspect-ratio: 1;
+
+			svg {
+				// height: 1.6rem;
+				color: var(--primary);
+
+				path {
+					fill: url(#fa-gradient) #fff;
+				}
+			}
+
+
+		}
+		
 		// Columns
 		.image {
 			flex-basis: 50%;

@@ -1,8 +1,10 @@
 {
 	"intro": {
-		"start": "const myName = () =>",
-		"end": "Hey there!, my name is",
-		"speed": 60,
+		"start": "Days is for Creatives",
+		"middle":"Days is for Businesses",
+		"earlyEnd":"Days is for Capturing Moments",
+		"end": "Days is for You :)",
+		"speed": 10,
 		"deletionSpeed": 80,
 		"wrapper": "h2",
 		"startDelay": 1000,
@@ -15,11 +17,11 @@
 		"usp": "The key to content creation."
 	},
 
-	"paragraph": "From an early age, my fascination with programming and computers ignited a lifelong passion. Constantly learning and developing, I strive to make a profound impact through innovative solutions and visionary ideas, shaping the future with my unwavering commitment to technological advancement. ",
+	"paragraph": "Days is a platform & collaboration software that connects the best editors, cinematographers & creators to anyone who wants to make content. Days is for businesses, vloggers, and anyone who wants to make end to end content produced on all platforms. Helping you capture the best days of your life.",
 
 	"buttons": {
 		"primary": {
-			"title": "Hire Me",
+			"title": "Join the Waitlist",
 			"url": "mailto:s.muhammadfiaz2003@gmail.com",
 			"leaveSite": false
 		},

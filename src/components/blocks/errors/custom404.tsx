@@ -43,12 +43,11 @@ function Custom404() {
                 <h1 className="not-found-title404">404 - Page Not Found</h1>
                 <p className="not-found-text404">
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    Oops! It seems like you've stumbled upon a non-existent page on my
-                    portfolio website.
+                    Oops! It seems like you've stumbled upon a non-existent page on days.
                 </p>
                 <p style={{ fontSize: '14px' }}>
                     If you think this issues or bugs, please report them{' '}
-                    <a href="https://github.com/muhammad-fiaz/portfolio/issues/new">@muhammad-fiaz</a>
+                    <a href="https://github.com/muhammad-fiaz/portfolio/issues/new">@solomonpickett</a>
                 </p>
                 <button className="go-back-button404" onClick={handleGoBack}>
                     Go Back to Homepage

@@ -17,7 +17,7 @@ export default function FeaturedProjects() {
 		<Section classProp={css.hasBg}>	
 			<Container spacing={'verticalXXXXLrg'}>
 				<SectionTitle
-					title="Featured Projects"
+					title="Upload to your favorite platforms"
 					preTitle="UX and Full Stack"
 					subTitle="Focused on the experience, driven by the engineering."
 				/> 				{

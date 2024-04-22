@@ -1,28 +1,63 @@
+import React, { useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
-// Section structure
 import Section from '../../structure/section';
 import Container from '../../structure/container';
 
-
-// Section general blocks
-// Spacing util
-// Section scss
+import hero from '../../../styles/scss/sections/index/hero.module.scss';
+import content from '../../../content/index/hero.json';
 import looking from '../../../styles/scss/sections/index/looking.module.scss';
 import section from '../../../styles/scss/blocks/section.title.module.scss'
 
 export default function Looking() {
-	return (
-		<Section classProp={`${looking.section} borderBottom`}>	
-			<Container classProp={`${section.title} ${looking.container}`} spacing={['verticalXXXLrg']}>
-				<h4>I&apos;m currently looking for Jobs.</h4>
-				<h2 className={looking.json}>Jobs : &#123;</h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight}>Full Stack Developer</span>,</h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Software Engineer</span></h2>
-				<h2 className={looking.json}>&#125;</h2>
-				<h4>I am particularly interested in product based positions where I can help make an organization wide impact.</h4>
-				{/* <h2>Fresher <span className={looking.highlight}>User Experience</span> Designer</h2> */}
-				{/* <p className="subtitle">with a focus on Product Design.</p> */}
-			</Container>
-		</Section>
-	)
+    const [, setTypingStatus] = useState('Initializing');
+
+    return (
+        <Section classProp={`${hero.section}`}>
+            <Container classProp={`${section.title} ${looking.container}`} spacing={['verticalXXXLrg']}>
+                <TypeAnimation
+                    className={`${hero.preHeader}`}
+                    sequence={[
+                        content.intro.startDelay,
+                        () => {
+                            setTypingStatus('typing');
+                        },
+                        content.intro.start,
+                        () => {
+                            setTypingStatus('typed');
+                        },
+                        content.intro.deleteDelay,
+                        () => {
+                            setTypingStatus('deleting');
+                        },
+						content.intro.middle,
+                        () => {
+                            setTypingStatus('typed');
+                        },
+                        content.intro.deleteDelay,
+                        () => {
+                            setTypingStatus('deleting');
+                        },
+						content.intro.earlyEnd,
+                        () => {
+                            setTypingStatus('typed');
+                        },
+                        content.intro.deleteDelay,
+                        () => {
+                            setTypingStatus('deleting');
+                        },
+                        content.intro.end,
+                        () => {
+                            setTypingStatus('deleted');
+                        },
+                        content.intro.restartDelay,
+                    ]}
+                    speed={30}
+                    deletionSpeed={80}
+                    wrapper={"h2"}
+                    repeat={Infinity}
+                />
+            </Container>
+        </Section>
+    );
 }

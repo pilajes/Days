@@ -1,6 +1,7 @@
 
 import Icon from '../utils/icon.tsx'
 import Badges from '../utils/badge.list'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import badges from '../../styles/scss/blocks/badges.module.scss';
 
@@ -8,7 +9,7 @@ export default function BadgesBlock({ title, copy, list, fullContainer, block, i
 	return (
 		<div className={`${badges.badgeBlockContainer} ${containerClass}`}>
 			<span className={headerIcon}>
-				<Icon icon={[ 'fat', icon ]} />
+				<FontAwesomeIcon icon={icon} />
 			</span>
 			<h3>{title}</h3>
 			<Copy copy={copy} />

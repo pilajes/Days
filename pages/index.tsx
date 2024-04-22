@@ -39,13 +39,13 @@ export default function HomePage({ spacing }: HomePageProps) {
 			<Hero />
 			<Looking />
 			<About />
-			<GithubGraphSection/>
+			{/* <GithubGraphSection/> */}
 
-			<FeaturedProjects />
-			<Technical />
+			{/* <FeaturedProjects /> */}
+			{/* <Technical /> */}
 			{/*	<TimeLine/> -> Still In Development*/}
-			<Career />
-			<QnA />
+			{/* <Career />
+			<QnA /> */}
 		</div>
 	);
 

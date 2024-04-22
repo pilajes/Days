@@ -131,6 +131,23 @@
 			.socialList {
 				justify-content: center;
 			}
+			
+			.footerImage {
+				width: 100px; /* Adjust the size as needed */
+				display: flex;
+				position: absolute;
+				bottom: .5rem; /* Adjust the distance from the bottom */
+				right: 10.3rem; /* Adjust the distance from the right */
+			  }
+			
 		}
 	}
 }
+.footerImage {
+	width: 100px; /* Adjust the size as needed */
+	display: flex;
+	position: absolute;
+	bottom: 6rem; /* Adjust the distance from the bottom */
+	right: 10rem; /* Adjust the distance from the right */
+  }
+  

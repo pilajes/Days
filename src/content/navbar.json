@@ -1,19 +1,8 @@
 [
+	
 	{
-		"url": "/",
-		"title": "Home"
-	},
-	{
-		"url": "/docs",
-		"title": "Docs"
-	},
-	{
-		"url": "/articles",
-		"title": "Articles"
-	},
-	{
-		"url": "/projects",
-		"title": "Projects"
+		"url": "/FAQ",
+		"title": "FAQ"
 	}
 
 

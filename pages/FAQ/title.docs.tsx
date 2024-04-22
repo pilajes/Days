@@ -12,7 +12,7 @@ export default function TitleDocs() {
 
             {/*These are the Keywords that will Boost your SEO in Ranking, so Make Sure to include and Update it up to your preference or don't mind this! 😴*/}
             <meta name="keywords" content="Muhammad Fiaz, Documentation, Technology, Software, Guides, Tutorials, Developer" />
-            <title>Documentations | Muhammad Fiaz</title>
+            <title>FAQ</title>
         </Head>
     );
 }

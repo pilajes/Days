@@ -1,31 +1,19 @@
 [
   {
-    "question": "Where are you currently studying?",
-    "answer": "I am currently studying computer science at the Velammal College of Engineering and Technology.",
+    "question": "What is Days?",
+    "answer": "Days is a platform & collaboration software that connects the best editors, cinematographers & creators to anyone who wants to make content. Days is for businesses, vloggers, and anyone who wants to make end to end content produced on all platforms. Helping you capture the best days of your life.",
     "isOpen": false
 
   },
   {
-    "question": "Have you worked on any projects?",
-    "answer": "Yes, in addition to my personal projects and hobbies, I have worked on several projects, both individually and in teams. These projects have allowed me to apply theoretical knowledge to real-world scenarios, honing my practical skills in software development, web technologies, and computer networks.",
+    "question": "What can I create with Days?",
+    "answer": "Our goals at Days is to connect you with the best creatives in the world and let you decide :). ",
     "isOpen": false
 
   },
   {
-    "question": "What extracurricular activities have you participated in?",
-    "answer": "I have actively participated in extracurricular activities and technical events on campus, which have provided me with opportunities to expand my knowledge, network with fellow students, and enhance my leadership and communication skills.",
-    "isOpen": false
-
-  },
-  {
-    "question": "Can we recruit you?",
-    "answer": "Yes, I am currently looking for jobs and I have also done several projects as a hobby.",
-    "isOpen": false
-
-  },
-  {
-    "question": "How do you stay updated with the latest developments in your field?",
-    "answer": "I believe in continuous learning and staying updated with the latest trends. I regularly read tech blogs, follow industry experts on social media, and participate in online courses and workshops to enhance my knowledge and skills. I am also actively involved in developing new projects that allow me to apply and expand my expertise.",
+    "question": "How can I join Days as a creator?",
+    "answer": "We are currently looking for creators to help us build & grow the platform. If interested, please reachout to solomonpickett@gmail.com",
     "isOpen": false
 
   }
