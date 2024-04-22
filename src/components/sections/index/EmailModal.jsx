@@ -3,6 +3,18 @@ import buttonStyles from '../../../styles/scss/blocks/button.module.scss'; // Im
 
 export default function EmailModal({ isOpen, closeModal, handleSubmit }) {
     const [email, setEmail] = useState('');
+    const [isValidEmail, setIsValidEmail] = useState(false);
+
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+        return emailRegex.test(email);
+    };
+
+    const handleEmailChange = (e) => {
+        const newEmail = e.target.value;
+        setEmail(newEmail);
+        setIsValidEmail(validateEmail(newEmail));
+    };
 
     return (
         <div className={isOpen ? 'modal-overlay' : 'hidden'}>
@@ -12,18 +24,30 @@ export default function EmailModal({ isOpen, closeModal, handleSubmit }) {
                 <div className="input-container">
                     <input
                         type="email"
-                        placeholder="Enter your email"
+                        placeholder="Please enter a valid email"
                         value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        onChange={handleEmailChange}
+                        style={{ width: '70%' }}
                     />
-                    <button
-                        type="button"
-                        className={`button ${buttonStyles.primary}`}
-                        style={{ backgroundColor: '#1890ff', borderColor: '#1890ff' }}
-                        onClick={() => handleSubmit(email)}
-                    >
-                        Submit
-                    </button>
+                    {isValidEmail ? (
+                        <button
+                            type="button"
+                            className={`button ${buttonStyles.primary}`}
+                            style={{ backgroundColor: '#1890ff', borderColor: '#1890ff' }}
+                            onClick={() => handleSubmit(email)}
+                        >
+                            Submit
+                        </button>
+                    ) : (
+                        <button
+                            type="button"
+                            className={`button ${buttonStyles.primary}`}
+                            style={{ backgroundColor: '#ccc', borderColor: '#ccc', cursor: 'not-allowed' }}
+                            disabled
+                        >
+                            Submit
+                        </button>
+                    )}
                 </div>
             </div>
             <style jsx>{`
