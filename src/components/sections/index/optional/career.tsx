@@ -37,7 +37,7 @@ export default function Career() {
 						</div>
 						<div className={career.companyAlt}></div>
 
-						<Badges list={fullStack} block="stack" fullContainer="fullContainer" color={undefined}/>
+						<Badges list={fullStack} block="stack" fullContainer="fullContainer" />
 						</div>
 
 					{/*	<article className={career.companyPositions}>
