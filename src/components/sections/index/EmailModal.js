@@ -1,6 +1,6 @@
-// EmailModal.js
-
 import React, { useState } from 'react';
+import { Button, Input } from 'antd';
+import { CloseOutlined } from '@ant-design/icons';
 
 export default function EmailModal({ isOpen, closeModal, handleSubmit }) {
     const [email, setEmail] = useState('');
@@ -8,15 +8,17 @@ export default function EmailModal({ isOpen, closeModal, handleSubmit }) {
     return (
         <div className={isOpen ? 'modal-overlay' : 'hidden'}>
             <div className="modal">
-                <button className="close-btn" onClick={closeModal}>X</button>
-                <h2>Join Waitlist</h2>
-                <input
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <button onClick={() => handleSubmit(email)}>Submit</button>
+                <button className="close-btn" onClick={closeModal}><CloseOutlined /></button>
+                <h2>Join the Waitlist</h2>
+                <div className="input-container">
+                    <Input
+                        type="email"
+                        placeholder="Enter your email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <Button type="primary" style={{ backgroundColor: '#1890ff', borderColor: '#1890ff' }} onClick={() => handleSubmit(email)}>Submit</Button>
+                </div>
             </div>
             <style jsx>{`
                 .modal-overlay {
@@ -34,6 +36,7 @@ export default function EmailModal({ isOpen, closeModal, handleSubmit }) {
                     background-color: #fff;
                     padding: 20px;
                     border-radius: 8px;
+                    position: relative; /* Ensure the absolute positioning of the close button */
                 }
                 .close-btn {
                     position: absolute;
@@ -42,6 +45,14 @@ export default function EmailModal({ isOpen, closeModal, handleSubmit }) {
                     background: none;
                     border: none;
                     cursor: pointer;
+                }
+                .input-container {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                }
+                .input-container > * {
+                    margin-right: 10px;
                 }
                 .hidden {
                     display: none;
