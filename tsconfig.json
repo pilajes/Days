@@ -110,7 +110,7 @@
     "**/*.ts",
     "**/*.tsx",
     "**/*.mdx"
-  ],
+, "src/components/sections/index/EmailModal.jsx"  ],
   "exclude": [
     "node_modules"
   ]

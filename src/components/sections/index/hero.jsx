@@ -15,7 +15,7 @@ import hero from '../../../styles/scss/sections/index/hero.module.scss';
 import button from '../../../styles/scss/blocks/button.module.scss';
 
 import content from '../../../content/index/hero.json';
-import EmailModal from './EmailModal';
+import EmailModal from './EmailModal.jsx';
 
 export default function Hero() {
     const [, setTypingStatus] = useState('Initializing');
